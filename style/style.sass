@@ -1,0 +1,127 @@
+$mobile: 375px
+$desktop: 1440px
+
+/* Colors */
+$PC-DarkMagenta: hsl(300, 43%, 22%)
+$PC-SoftPink: hsl(333, 80%, 67%)
+$SC-DarkGrayishMagenta: hsl(303, 10%, 53%)
+$SC-LightGrayishMagenta: hsl(290, 30%, 96%)
+$SC-White: hsl(0, 0%, 100%)
+
+*,
+*:before,
+*:after 
+    box-sizing: border-box
+
+p,
+h1
+    margin: 0
+
+body
+    font-family: 'Spartan', sans-serif
+    font-size: 15px
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg)
+    background-position: left top, right bottom
+    background-repeat: no-repeat, no-repeat
+
+h1
+    color: $PC-DarkMagenta
+    font-size: 46px
+
+#wrapper
+    max-width: 96rem
+    margin: 0 auto
+    padding: 0 11rem
+
+main
+    padding-top: 126px
+    margin-bottom: 70px
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+
+.main__copy
+    // width: 50%
+    // padding-right: 110px
+    // padding-right: 8rem
+
+.main__copy p
+    margin-top: 14px
+    font-size: 14px
+    line-height: 24px
+    color: $SC-DarkGrayishMagenta
+
+.main__rate-stars
+    width: 50%
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+
+.rate-stars__card
+    width: 445px
+    padding: 16px 30px
+    display: flex
+    align-items: center
+    border-radius: 8px
+    background-color: $SC-LightGrayishMagenta
+
+.rate-stars__copy
+    padding-left: 32px
+    font-size: 13px
+    font-weight: 700
+    color: $PC-DarkMagenta
+
+.rate-stars__card--center
+    margin: 16px 0
+
+.rate-stars__card--right
+
+
+
+#customers
+    // display: flex
+    // justify-content: space-between
+    // align-items: flex-start
+    // flex-wrap: wrap
+    display: grid
+    grid-gap: 1rem
+    grid-template-columns: repeat(auto-fill, minmax(23.333rem, 1fr))
+
+.customer
+    // max-width: 23.333rem
+    padding: 40px
+    border-radius: 8px
+    background-color: $PC-DarkMagenta
+    font-size: 12px
+    color: #FFF
+
+.customer__info
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+
+.customer__photo
+    width: 40px
+    margin-right: 22px
+    border-radius: 50%
+
+.customer__name,
+.customer__verified
+    display: block
+
+.customer__name
+    font-weight: 700
+    line-height: 24px
+
+.customer__verified
+    font-weight: 400
+    color: $PC-SoftPink
+
+.customer__comment
+    line-height: 20px
+
+.customer--middle
+    margin-top: 16px
+
+.customer--bottom
+    margin-top: 32px
