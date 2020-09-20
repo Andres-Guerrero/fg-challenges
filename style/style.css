@@ -133,7 +133,7 @@ main {
 
   #wrapper {
     min-width: 1440px;
-    padding: 0 165px;
+    padding: 126px 165px 0;
   }
 
   main {
