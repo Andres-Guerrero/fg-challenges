@@ -1,4 +1,9 @@
 /* Colors */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *:before,
 *:after {
@@ -39,12 +44,16 @@ p {
 }
 
 main {
-  padding: 80px 0 50px 0;
+  padding: 80px 0 50px;
 }
 
 .main__copy {
   padding-bottom: 44px;
   text-align: center;
+}
+
+.main__copy p {
+  color: #8b848b;
 }
 
 .rate-stars__card {
@@ -60,6 +69,7 @@ main {
   padding-top: 14px;
   color: #502050;
   font-weight: 700;
+  line-height: 14px;
 }
 
 .rate-stars__card--center {
@@ -127,21 +137,25 @@ main {
   }
 
   h1 {
+    padding-bottom: 12px;
     font-size: 46px;
     line-height: 48px;
   }
 
   #wrapper {
     min-width: 1440px;
-    padding: 126px 165px 0;
+    padding: 0 165px;
   }
 
   main {
+    padding: 126px 0 74px;
     display: flex;
+    justify-content: center;
   }
 
   .main__copy {
     padding-right: 8%;
+    padding-bottom: 0;
     flex-basis: 50%;
     text-align: left;
   }
@@ -150,6 +164,7 @@ main {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
+    align-self: center;
   }
 
   .rate-stars__card {
@@ -164,6 +179,7 @@ main {
 
   .rate-stars__copy {
     padding-top: 0;
+    line-height: 0;
   }
 
   .rate-stars__card--center {

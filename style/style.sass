@@ -4,9 +4,13 @@ $desktop: 1440px
 /* Colors */
 $PC-DarkMagenta: hsl(300, 43%, 22%)
 $PC-SoftPink: hsl(333, 80%, 67%)
-$SC-DarkGrayishMagenta: hsl(303, 10%, 53%)
+$SC-DarkGrayishMagenta: hsl(300, 3%, 53%)
 $SC-LightGrayishMagenta: hsl(290, 30%, 96%)
 $SC-White: hsl(0, 0%, 100%)
+
+*
+    margin: 0
+    padding: 0
 
 *,
 *:before,
@@ -41,11 +45,15 @@ p
     margin: 0 auto
 
 main
-    padding: 80px 0 50px 0
+    padding: 80px 0 50px
 
 .main__copy
     padding-bottom: 44px
     text-align: center
+
+.main__copy
+    p
+        color: $SC-DarkGrayishMagenta
 
 .rate-stars__card
     padding: 1rem 0
@@ -59,6 +67,7 @@ main
     padding-top: 14px // is it necessary for desktop?
     color: $PC-DarkMagenta
     font-weight: 700
+    line-height: 14px
 
 .rate-stars__card--center
     margin: 16px 0
@@ -113,18 +122,22 @@ main
         background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg)
 
     h1
+        padding-bottom: 12px
         font-size: 46px
         line-height: 48px
         
     #wrapper
         min-width: $desktop
-        padding: 126px 165px 0
+        padding: 0 165px
 
     main
+        padding: 126px 0 74px
         display: flex
+        justify-content: center
 
     .main__copy
         padding-right: 8%
+        padding-bottom: 0
         flex-basis: 50%
         text-align: left
 
@@ -132,6 +145,7 @@ main
         flex-basis: 50%
         display: flex
         flex-direction: column
+        align-self: center
 
     .rate-stars__card
         width: 446px
@@ -143,6 +157,7 @@ main
 
     .rate-stars__copy
         padding-top: 0
+        line-height: 0
 
     .rate-stars__card--center
         align-self: center
