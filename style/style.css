@@ -198,6 +198,7 @@ main {
 
   .customer {
     min-width: 23.3333rem;
+    height: 244px;
   }
 
   .customer__comment {
@@ -205,7 +206,11 @@ main {
   }
 
   .customer--middle {
-    margin: 0 2rem;
+    margin: 16px 2rem 0;
+  }
+
+  .customer--bottom {
+    margin-top: 32px;
   }
 }
 
